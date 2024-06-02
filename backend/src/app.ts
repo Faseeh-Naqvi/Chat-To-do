@@ -19,7 +19,7 @@ app.use(morgan("dev"))//if we make a call to the backend this will give us the l
 
 
 //create all middlewares:
-app.use("api/v1", appRouter);//after express reaches this endpoint: "api/v1" then it will be handled by appRouter.
+app.use("/api/v1", appRouter);//after express reaches this endpoint: "api/v1" then it will be handled by appRouter.
 //App router(in index.ts in \routes) will then either send it to chat-routes or user-routes
 
 export default app;

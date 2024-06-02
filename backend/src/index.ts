@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 5000;
 //will only open server when connected to database.
 connectToDatabase()
 .then(()=>{
-  app.listen(PORT, ()=>console.log("server open and connected to database")); 
+  app.listen(PORT, ()=>console.log("😎server open and connected to database😎")); 
    
 }).catch(err=>console.log(err))
 
