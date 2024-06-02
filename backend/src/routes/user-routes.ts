@@ -8,7 +8,6 @@ const userRoutes = Router();
 
 userRoutes.get("/",getAllUsers)
 
-
 //user signup
 userRoutes.post("/signup",userSignup)//will be /user/signup
 
