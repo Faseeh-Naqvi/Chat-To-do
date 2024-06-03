@@ -20,4 +20,8 @@ export const signupValidator = [
     body("email").notEmpty().withMessage("Please enter your email").trim().isEmail().withMessage("Please enter a valid email."),
     body("password").notEmpty().withMessage("please enter a password").isLength({ min: 6 }).withMessage("Password should contain atleast 6 characters.") //.isStrongPassword().withMessage("this is not a strong password.")
 ];
+export const loginValidator = [
+    body("email").notEmpty().withMessage("Please enter your email").trim().isEmail().withMessage("Please enter a valid email."),
+    body("password").notEmpty().withMessage("please enter a password").isLength({ min: 6 }).withMessage("Password should contain atleast 6 characters.") //.isStrongPassword().withMessage("this is not a strong password.")
+];
 //# sourceMappingURL=validators.js.map
