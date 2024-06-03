@@ -6,13 +6,15 @@ const app = express();//holds fundtionality of the express application
 import {config} from "dotenv";
 import morgan from 'morgan'; 
 import appRouter from './routes/index.js';
+import cookieParser from 'cookie-parser';
 
 config();
 
 //middlewares
 app.use(express.json());
 
-
+//middleware for passing cookies to frontenc
+app.use(cookieParser(process.env.COOKIE_SECRET))
 
 //remove it from production
 app.use(morgan("dev"))//if we make a call to the backend this will give us the log message
