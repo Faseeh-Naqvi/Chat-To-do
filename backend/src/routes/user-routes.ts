@@ -1,6 +1,7 @@
 import { Router } from "express";
 import appRouter from "./index.js";
 import { getAllUsers, userSignup } from "../controllers/user-controllers.js";
+import { signupValidator, validate } from "../utils/validators.js";
 
 const userRoutes = Router();
 
@@ -8,6 +9,7 @@ const userRoutes = Router();
 
 userRoutes.get("/",getAllUsers)
 
+userRoutes.post("/signup",validate(signupValidator),userSignup)
 //user signup
 userRoutes.post("/signup",userSignup)//will be /user/signup
 
