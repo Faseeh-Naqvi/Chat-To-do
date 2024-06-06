@@ -9,3 +9,6 @@ html,body{
   color: aliceblue;
 }
 
+.image-inverted{
+  filter:invert();
+}
