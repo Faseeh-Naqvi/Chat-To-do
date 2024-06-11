@@ -12,3 +12,13 @@ html,body{
 .image-inverted{
   filter:invert();
 }
+
+.nav-link{
+  font-weight: 600;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
