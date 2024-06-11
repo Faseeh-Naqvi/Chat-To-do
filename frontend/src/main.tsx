@@ -5,6 +5,9 @@ import './index.css'
 import { createTheme, ThemeProvider } from '@mui/material'
 import { BrowserRouter } from "react-router-dom"
 import { AuthProvider } from './context/AuthContext.tsx'
+import axios from 'axios'
+axios.defaults.baseURL = "http://localhost:000/api/v1"//helps connect frontend and backend
+axios.defaults.withCredentials = true;//lets us send cookies
 
 
 //entry point of the application
