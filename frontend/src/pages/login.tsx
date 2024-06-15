@@ -4,12 +4,24 @@ import { RiLoginBoxLine } from "react-icons/ri";
 import React from 'react'
 import CustomisedInput from '../components/shared/CustomisedInput';
 
+import { toast } from 'react-hot-toast'
+import { useAuth } from '../context/AuthContext';
+
 const Login = () => {
- const handleSubmit = (event:React.FormEvent<HTMLFormElement> )=>{
+  const auth = useAuth();
+
+
+ const handleSubmit = async(event:React.FormEvent<HTMLFormElement> )=>{
       event.preventDefault();
       const formData = new FormData(event.currentTarget);
-      const email = formData.get("email");
-      const password = formData.get('password');
+      const email = formData.get("email") as string;
+      const password = formData.get('password') as string;
+      try {
+        toast.loading("Signing In Pal" , {id})//left off here. 3:13:19
+        await auth?.login(email,password);
+      } catch (error) {
+        
+      }
       
     }
 

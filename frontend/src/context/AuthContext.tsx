@@ -2,7 +2,9 @@
 //if the user is logged in then there will be a boolean inside it which will be true.
 //we will have login and logout functions
 
+
 import {ReactNode, createContext, useContext, useEffect, useState} from 'react'
+import { loginUser } from '../helpers/api-commmunicator';
 
 type User={
     name:string;
@@ -30,7 +32,13 @@ export const AuthProvider = ({children}:{children: ReactNode})=>{
     useEffect(()=>{
         //fetch if the users cookies are valid, then skip login
     },[])
-    const login = async( email:string,password:string)=>{};
+    const login = async( email:string,password:string)=>{
+        const data = await loginUser(email,password);//checks the login
+        if (data) {
+           setUser({email:data.email, name:data.name})//who is logged in?
+           setIsloggedIn(true);//user is now logged in
+        }
+    };
     const logout = async( )=>{};
     const signup = async( name:string,email:string,password:string)=>{};
 
