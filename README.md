@@ -2,12 +2,10 @@
 Your personal To-Do list generating assistant!
 
 <h2>Upcoming additions</h2>
-<li>
-  - Finish Frontend
-  - Create Nodes
-  - Pass nodes through Prims algorithm
-  - Process MST into ToDoist API to be output a list
-</li>
+<li>Finish Frontend</li>
+<li>Create Nodes</li>
+<li>Pass nodes through Prims algorithm</li>
+<li>Process MST into ToDoist API to be output a list</li>
 --- 
 <h2>Brainstorm:</h2>
 
