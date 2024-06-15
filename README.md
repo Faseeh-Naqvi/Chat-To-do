@@ -11,4 +11,5 @@ Your personal To-Do list generating assistant!
 --- 
 <h2>Brainstorm:</h2>
 
-<img href="https://github.com/Faseeh-Naqvi/Chat-To-do/assets/94808336/7dcf459d-9c92-4f34-a41b-89b42321f8b5"></img>
+![image](https://github.com/Faseeh-Naqvi/Chat-To-do/assets/94808336/50f85580-ab0f-4fde-b7d8-01ad3706cd09)
+
